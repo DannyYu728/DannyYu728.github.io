@@ -1,3 +1,3 @@
-$('div').hover(function () {
-  $(this).toggleClass('show-description');
+('div').hover(function () {
+  (this).toggleClass('show-description');
 });

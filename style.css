@@ -1,15 +1,15 @@
 body {
   font-family: helvetica, sans-serif;
-  background: url("https://dto9r5vaiz7bu.cloudfront.net/r5ic9wwwoyx7b/source.jpg");
+  background: url("https://free4kwallpapers.com/uploads/originals/2019/04/07/origami-foxes-wallpaper.jpg");
   background-size: cover;
-  Background-position: center;
+  Background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 header {
   text-align: center;
-  background: url("https://wallpaperaccess.com/full/17520.jpg");
+  background: url("http://cdn.wallpaperhi.com/2560x1600/20140410/clouds%20stars%20moon%20night%20sky_www.wallpaperhi.com_39.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.9;
@@ -73,41 +73,6 @@ h3 {
   text-shadow: 3px 3px black;
 }
 
-.title {
-  color: rgba(255, 255, 255, 1);
-  background: black;
-  background: linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
-  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
-  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
-  padding: 10px;
-  line-height: 28px;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  width: 580px;
-  border-radius: 10px;
-}
-
-.des {
-  opacity: 0;
-  background: linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
-  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
-  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, .4));
-  background: cover;
-  color: white;
-  padding: 60px 10px 65px 10px;
-  transition: opacity 1.5s;
-  -webkit-transition: opacity 1.5s;
-  -moz-transition: opacity 1.5s;
-  border-radius: 15px;
-  line-height: 25px;
-}
-
-.nav:hover {
-  background-color: rgba(60, 60, 60, 0.9);
-  color: Yellow;
-}
-
 .Rick:hover {
   background: url("https://i.gifer.com/Octt.gif");
   background-size: contain;
@@ -117,79 +82,12 @@ h3 {
   color: rgba(60, 60, 60, 0.0);
 }
 
-.show-description .title {
-  transform: translateY(-150px);
-  background: rgba(0, 0, 0, 0);
-  color: Yellow;
-}
-
-.show-description .des {
-  opacity: 1;
-}
-
-.Avenger {
-  background-image: url("https://starcitizen.tools/images/4/4b/Avenger_Titan_3.2_sale_Titan_01-Squashed.jpg?version=2e5f1075f6aab7440b064201e34d0017");
+.Tele {
+  background-image: url("https://cdn.wallpapersafari.com/79/26/w9TpmY.png");
   background-position: center;
 }
 
-.Nomad {
-  background-image: url("https://media.robertsspaceindustries.com/rlzz8mj3f8l4q/source.jpg");
+.Tele__Content {
+  text-align: center;
+  color: white;
 }
-
-.Hawk {
-  background-image: url("https://media.robertsspaceindustries.com/yshd7vv3i1ds0/store_slideshow_large.png");
-}
-
-.price {
-  float: right;
-}
-
-.Link {
-  float: right;
-  text-decoration: underline overline;
-}
-
-@media (max-width: 500px) {
-  h1 {
-    font-size: 40px;
-    margin-top: 20px;
-    line-height: 40px;
-  }
-
-  h2 {
-    font-size: 20px;
-    margin: 20px 0 30px 0;
-  }
-
-  div {
-    margin: 0 auto;
-    width: 275px;
-  }
-
-  .title {
-    font-size: 20px;
-    line-height: 24px;
-    Width: 255px;
-  }
-
-  small {
-    font-size: 10px;
-    line-height: 15px;
-  }
-
-  .Avenger {
-    background-size: cover;
-  }
-
-  .Nomad {
-    background-size: cover;
-    Background-position: center;
-  }
-
-  .Hawk {
-    background-size: cover;
-    Background-position: center;
-  }
-}
-
-</style>
