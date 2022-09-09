@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: yellow;
+}
+
+header {
+  background: red;
+}
+
+nav {
+  background: grey;
+}
+
+h1 {
+  color: white;
+}
+
+footer {
+  background-color: grey;
+}
