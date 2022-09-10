@@ -1,93 +1,168 @@
-body {
-  font-family: helvetica, sans-serif;
-  background: url("https://free4kwallpapers.com/uploads/originals/2019/04/07/origami-foxes-wallpaper.jpg");
-  background-size: cover;
-  Background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+  body {
+    text-align: center;
+    background: url("https://wallpaperaccess.com/full/3461470.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: monospace;
+  }
 
-header {
-  text-align: center;
-  background: url("http://cdn.wallpaperhi.com/2560x1600/20140410/clouds%20stars%20moon%20night%20sky_www.wallpaperhi.com_39.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.9;
-  padding: 10px 0px 0px 0px;
-  margin: -10px -8px 0px -8px;
-}
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-shadow: 5px 10px 10px black;
+  }
 
-ul {
-  padding: 10px;
-  background: rgba(60, 60, 60, 0.9);
-}
+  .home,
+  .game {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: Courier;
+  }
 
-ul:hover {
-  background: url("https://staticdelivery.nexusmods.com/images/1151/6050893-1472831060.gif");
-  background-size: cover;
-  background-position: center;
-}
+  .home:hover {
+    background: url("https://media0.giphy.com/media/KOvMTaaydyK2wUW1AE/giphy.gif?cid=ecf05e470bh3s73z9procb4e9v84cfxeukctz1v64hsgkuy1&rid=giphy.gif&ct=s");
+  }
 
-li {
-  display: inline;
-  padding: 0px 20px 0px 10px;
-}
+  .game:hover {
+    background: url("https://media0.giphy.com/media/2xPPF9H4LMdcp2MYIP/giphy.gif?cid=790b761129f8fffaf448ff8749326f6e8799aa488a17d509&rid=giphy.gif&ct=s");
+  }
 
-div {
-  height: 200px;
-  background-size: cover;
-  position: relative;
-  border-radius: 15px;
-  margin: 0 auto 20px auto;
-  max-width: 600px;
-}
+  .home:hover,
+  .game:hover {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(4);
+    color: rgba(60, 60, 60, 0.0);
+    text-shadow: 0px 0px;
+  }
 
-h1 {
-  font-family: 'Permanent Marker', cursive;
-  text-align: center;
-  font-size: 85px;
-  color: white;
-  text-shadow: 3px 3px black;
-  letter-spacing: 15px;
-}
+  #btn__img {
+    background: url("https://c.tenor.com/3uHxa8bk_lkAAAAi/mario-super-mario.gif");
+    cursor: crosshair;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 75px;
+    margin: 50px;
+    border: none;
+    filter: drop-shadow(20px 30px 10px black);
 
-h2 {
-  font-family: 'Koulen', cursive;
-  text-align: center;
-  color: yellow;
-  margin: 0px 0 20px 0;
-  font-size: 35px;
-  text-shadow: 3px 3px black;
-  letter-spacing: 2px;
-}
+  }
 
-a {
-  Color: white;
-  text-decoration: none;
-}
+  main {
+    display: flex;
+    justify-content: center;
+    color: red;
+  }
 
-h3 {
-  color: white;
-  text-align: center;
-  font-size: 30px;
-  text-shadow: 3px 3px black;
-}
+  main:hover {
+    transform: scale(2.5);
+  }
 
-.Rick:hover {
-  background: url("https://i.gifer.com/Octt.gif");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 11px;
-  color: rgba(60, 60, 60, 0.0);
-}
+  .book {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 5%;
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+    filter: drop-shadow(20px 30px 10px black);
+    font-size: 10px;
+  }
 
-.Tele {
-  background-image: url("https://cdn.wallpapersafari.com/79/26/w9TpmY.png");
-  background-position: center;
-}
+  .page1,
+  .page2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    row-gap: 70px;
+  }
 
-.Tele__Content {
-  text-align: center;
-  color: white;
-}
+  .page1 {
+    border-left: 3px solid brown;
+    border-right: 2px solid brown;
+  }
+
+  .page2 {
+    border-right: 5px solid brown;
+  }
+
+  .pixel1 {
+    background: url("https://c.tenor.com/_EYOsX_1CUkAAAAC/pixel-night.gif");
+  }
+
+  .pixel2 {
+    background: url("https://i.pinimg.com/originals/9d/ea/64/9dea6422afee150cbe2f65b5317285eb.gif");
+  }
+
+  .pixel1,
+  .pixel2 {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 175px;
+    height: 100px;
+  }
+
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-shadow: 5px 15px 10px black;
+  }
+
+  .contact,
+  .about {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: Courier;
+  }
+
+  .contact:hover {
+    background: url("https://giffiles.alphacoders.com/360/36088.gif");
+  }
+
+  .about:hover {
+    background: url("https://media0.giphy.com/media/IU5ApmC4e6wEw/giphy.gif?cid=790b761186c21aa6de3ad6955cdcfd83088656dc21bebcf1&rid=giphy.gif&ct=g");
+  }
+
+  .contact:hover,
+  .about:hover {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(4);
+    color: rgba(60, 60, 60, 0.0);
+    text-shadow: 0px 0px;
+  }
+
+  #dia {
+    background-color: red;
+    border: 3px solid red;
+  }
+
+  @media (max-width: 1000px) {
+    main:hover {
+      transform: scale(1.8);
+    }
+  }
+
+  @media (max-width: 800px) {
+    main:hover {
+      transform: scale(1.2);
+    }
+  }
