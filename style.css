@@ -19,7 +19,7 @@
     row-gap: 50px;
     margin-top: 60px;
     margin-right: 50px;
-    text-shadow: 5px 10px 10px black;
+    text-shadow: 5px 10px 8px rgb(17, 26, 205);
   }
 
   #home,
@@ -39,6 +39,7 @@
 
     to {
       transform: rotate(10deg);
+
     }
   }
 
@@ -96,8 +97,7 @@
 
   main:active {
     animation: none;
-    transform: scale(2.5);
-
+    transform: scale(2.5) rotatex(65deg);
   }
 
   .book {
@@ -106,7 +106,7 @@
     width: 200px;
     border-radius: 5%;
     border-top: 2px solid brown;
-    border-bottom: 2px solid brown;
+    border-bottom: 8px solid brown;
     filter: drop-shadow(20px 30px 10px black);
     font-size: 10px;
   }
@@ -146,20 +146,23 @@
     height: 100px;
   }
 
-p {
-   color: blue;
-   position: relative;
-   top: 90%;
+  p {
+    color: blue;
+    position: relative;
+    top: 90%;
   }
 
   footer {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .f__link {
+    display: flex;
     flex-direction: column;
-    align-items: flex-end;
     row-gap: 55px;
-    justify-content: space-betwee;
     margin-right: 50px;
-    text-shadow: 5px 15px 10px black;
+    text-shadow: 5px 15px 7px rgb(174, 38, 38);
   }
 
   .contact,
@@ -187,9 +190,13 @@ p {
     animation-fill-mode: forwards;
   }
 
-  #dia {
+  #btn__boom {
+    position: relative;
+    top: 200px;
+    margin-left: 30px;
+    height: 50px;
     background-color: red;
-    border: 3px solid red;
+    color: white; 
   }
 
   @media (max-width: 1000px) {

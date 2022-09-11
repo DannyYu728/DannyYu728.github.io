@@ -1,0 +1,73 @@
+body {
+  text-align: center;
+  background: url("https://wallpaperaccess.com/full/522616.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  display: none;
+}
+
+main {
+  display: none
+}
+
+footer {
+  position: relative;
+  top: 500px;
+}
+
+.f__link {
+  display: none;
+}
+
+#btn__boom {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 5px solid black;
+  background-color: aqua;
+  border-radius: 50%;
+  text-align: center;
+  animation: 12s infinite alternate ahh;
+}
+
+@keyframes ahh {
+  0% {
+    right: 0px;
+    bottom: 0px;
+  }
+
+  20% {
+    transform: scale(0.2) rotatez(90deg);
+    right: 200px;
+    bottom: 0px;
+  }
+
+  35% {
+    transform: scale(3) rotatex(80deg);
+    right: 200px;
+    bottom: 200px;
+  }
+
+  50% {
+    transform: scale(1.1) rotateY(70deg);
+    right: -200px;
+    bottom: 200px;
+  }
+
+  75% {
+    transform: scale(0.5) rotate(-90deg);
+    right: -200px;
+    bottom: 0px;
+  }
+
+  100% {
+    right: 0px;
+    bottom: 0px;
+  }
+
+}
