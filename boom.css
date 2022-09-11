@@ -8,6 +8,11 @@ body {
 }
 
 header {
+  position: relative;
+  top: 500px;
+}
+
+.h__link {
   display: none;
 }
 
@@ -16,13 +21,9 @@ main {
 }
 
 footer {
-  position: relative;
-  top: 500px;
-}
-
-.f__link {
   display: none;
 }
+
 
 #btn__boom {
   position: relative;

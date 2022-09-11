@@ -1,16 +1,47 @@
-  body {
-    text-align: center;
+  body,
+  html {
+    height: 100%;
+    margin: 0;
     font-family: monospace;
-    background: url("https://wallpaperaccess.com/full/3461470.jpg");
-    background-size: cover;
+    /* background: url("https://wallpaperaccess.com/full/3461470.jpg"); */
+    /* background: rgb(27, 27, 27); */
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .bg-image {
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .img1 {
+    background-image: url("https://i.redd.it/cbem5vx6zii71.png");
+  }
+
+  .img2 {
+    background-image: url("https://www.teahub.io/photos/full/361-3611051_sci-fi-pixel-art-city.jpg");
+  }
+
+  .img3 {
+    background-image: url("https://i.pinimg.com/originals/99/8e/05/998e055aba57c24138220937cc5166ab.gif");
+  }
+
+  .img4 {
+    background-image: url("https://www.themasterpicks.com/wp-content/uploads/2020/04/22b22287602523.5dbd29081561d.gif");
   }
 
   header {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .h__link {
@@ -76,9 +107,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     padding: 75px;
-    margin: 50px;
+    position: relative;
+    top: 100px;
+    left: 100px;
     border: none;
-    filter: drop-shadow(20px 30px 10px black);
+    filter: drop-shadow(10px 10px 5px black);
   }
 
   main {
@@ -86,18 +119,17 @@
     align-items: center;
     justify-content: center;
     margin: 30px 0px 80px 0px;
-
-  }
-
-  main:hover {
-    animation: 3s infinite alternate rotate;
-    animation-fill-mode: forwards;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
   }
 
   main:active {
-    animation: none;
-    transform: scale(2.5) rotatex(65deg);
+    transform: scale(2.5) rotatex(65deg) translate(-20%, -40%);
+
   }
 
   .book {
@@ -155,6 +187,11 @@
   footer {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .f__link {
@@ -163,6 +200,7 @@
     row-gap: 55px;
     margin-right: 50px;
     text-shadow: 5px 15px 7px rgb(174, 38, 38);
+    margin-bottom: 50px;
   }
 
   .contact,
@@ -196,18 +234,24 @@
     margin-left: 30px;
     height: 50px;
     background-color: red;
-    color: white; 
+    color: white;
   }
 
   @media (max-width: 1000px) {
-    main:hover {
-      transform: scale(1.5);
+    main:active {
+      transform: scale(1.5) translate(-30%, -50%);
+      ;
+    }
+
+    #btn__img {
+      top: 45px;
     }
   }
 
   @media (max-width: 800px) {
-    main:hover {
-      transform: scale(1.0);
+    main:active {
+      transform: scale(1.0) translate(-50%, -60%);
+      ;
     }
 
     @keyframes hov_anim {
