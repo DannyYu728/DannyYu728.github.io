@@ -1,47 +1,71 @@
   body {
     text-align: center;
+    font-family: monospace;
     background: url("https://wallpaperaccess.com/full/3461470.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: monospace;
   }
 
   header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+  }
+
+  .h__link {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
     margin-top: 60px;
-    margin-left: 50px;
     margin-right: 50px;
     text-shadow: 5px 10px 10px black;
   }
 
-  .home,
-  .game {
+  #home,
+  #game {
     color: white;
     text-decoration: none;
     font-size: 50px;
     font-family: Courier;
+    animation: 3s infinite alternate rotate;
+    animation-fill-mode: forwards;
   }
 
-  .home:hover {
+  @keyframes rotate {
+    from {
+      transform: rotate(-10deg);
+    }
+
+    to {
+      transform: rotate(10deg);
+    }
+  }
+
+  #home:hover {
     background: url("https://media0.giphy.com/media/KOvMTaaydyK2wUW1AE/giphy.gif?cid=ecf05e470bh3s73z9procb4e9v84cfxeukctz1v64hsgkuy1&rid=giphy.gif&ct=s");
   }
 
-  .game:hover {
+  #game:hover {
     background: url("https://media0.giphy.com/media/2xPPF9H4LMdcp2MYIP/giphy.gif?cid=790b761129f8fffaf448ff8749326f6e8799aa488a17d509&rid=giphy.gif&ct=s");
   }
 
-  .home:hover,
-  .game:hover {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    transform: scale(4);
-    color: rgba(60, 60, 60, 0.0);
-    text-shadow: 0px 0px;
+  #home:hover,
+  #game:hover {
+    animation: 0s infinite alternate hov_anim;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes hov_anim {
+
+    to {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: scale(4);
+      color: rgba(60, 60, 60, 0.0);
+      text-shadow: 0px 0px;
+    }
   }
 
   #btn__img {
@@ -54,17 +78,26 @@
     margin: 50px;
     border: none;
     filter: drop-shadow(20px 30px 10px black);
-
   }
 
   main {
     display: flex;
+    align-items: center;
     justify-content: center;
-    color: red;
+    margin: 30px 0px 80px 0px;
+
   }
 
   main:hover {
+    animation: 3s infinite alternate rotate;
+    animation-fill-mode: forwards;
+
+  }
+
+  main:active {
+    animation: none;
     transform: scale(2.5);
+
   }
 
   .book {
@@ -113,23 +146,31 @@
     height: 100px;
   }
 
+p {
+   color: blue;
+   position: relative;
+   top: 90%;
+  }
 
   footer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 60px;
-    margin-left: 50px;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 55px;
+    justify-content: space-betwee;
     margin-right: 50px;
     text-shadow: 5px 15px 10px black;
   }
 
   .contact,
   .about {
+    display: inline-block;
     color: white;
     text-decoration: none;
     font-size: 50px;
     font-family: Courier;
+    animation: 3s infinite alternate rotate;
+
   }
 
   .contact:hover {
@@ -142,12 +183,8 @@
 
   .contact:hover,
   .about:hover {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    transform: scale(4);
-    color: rgba(60, 60, 60, 0.0);
-    text-shadow: 0px 0px;
+    animation: 0s infinite alternate hov_anim;
+    animation-fill-mode: forwards;
   }
 
   #dia {
@@ -157,12 +194,31 @@
 
   @media (max-width: 1000px) {
     main:hover {
-      transform: scale(1.8);
+      transform: scale(1.5);
     }
   }
 
   @media (max-width: 800px) {
     main:hover {
-      transform: scale(1.2);
+      transform: scale(1.0);
+    }
+
+    @keyframes hov_anim {
+
+      to {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: scale(1.5);
+        color: rgba(60, 60, 60, 0.0);
+        text-shadow: 0px 0px;
+      }
+    }
+
+    #home,
+    #game,
+    .contact,
+    .about {
+      font-size: 30px;
     }
   }
