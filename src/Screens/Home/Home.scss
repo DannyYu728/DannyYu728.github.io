@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 2.5rem);
+  height: calc(100vh - 3rem);
   width: 100%;
   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
   font-size: 3rem;
@@ -60,8 +60,8 @@
   --star-tail-length: 6em;
   --star-tail-height: 2px;
   --star-width: calc(var(--star-tail-length) / 6);
-  --fall-duration: 9s;
-  --tail-fade-duration: var(--fall-duration);
+  --starFall-duration: 9s;
+  --tail-fade-duration: var(--starFall-duration);
 
   position: absolute;
   top: var(--top-offset);
@@ -73,19 +73,19 @@
   border-radius: 50%;
   filter: drop-shadow(0 0 6px currentColor);
   transform: translate3d(104em, 0, 0);
-  animation: fall var(--fall-duration) var(--fall-delay) linear infinite,
-    tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+  animation: starFall var(--starFall-duration) var(--starFall-delay) linear infinite,
+    tail-fade var(--tail-fade-duration) var(--starFall-delay) ease-out infinite;
 
   @include sp-layout {
-    animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
+    animation: starFall var(--starFall-duration) var(--starFall-delay) linear infinite;
   }
 
   @for $i from 1 through $star-count {
     &:nth-child(#{$i}) {
       --star-tail-length: #{random_range(500em, 750em) / 100};
       --top-offset: #{random_range(0vh, 10000vh) / 100};
-      --fall-duration: #{random_range(6000, 12000s) / 1000};
-      --fall-delay: #{random_range(0, 10000s) / 1000};
+      --starFall-duration: #{random_range(6000, 12000s) / 1000};
+      --starFall-delay: #{random_range(0, 10000s) / 1000};
     }
   }
 
@@ -111,7 +111,7 @@
   }
 }
 
-@keyframes fall {
+@keyframes starFall {
   to {
     transform: translate3d(-30em, 0, 0);
   }
