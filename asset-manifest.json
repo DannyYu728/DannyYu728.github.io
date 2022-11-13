@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc686224.css",
-    "main.js": "/static/js/main.1746a619.js",
+    "main.css": "/static/css/main.a1d4bbc4.css",
+    "main.js": "/static/js/main.2668126b.js",
+    "static/media/NY2.jpg": "/static/media/NY2.6ff957ab0d92fc058aee.jpg",
     "index.html": "/index.html",
-    "main.bc686224.css.map": "/static/css/main.bc686224.css.map",
-    "main.1746a619.js.map": "/static/js/main.1746a619.js.map"
+    "main.a1d4bbc4.css.map": "/static/css/main.a1d4bbc4.css.map",
+    "main.2668126b.js.map": "/static/js/main.2668126b.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc686224.css",
-    "static/js/main.1746a619.js"
+    "static/css/main.a1d4bbc4.css",
+    "static/js/main.2668126b.js"
   ]
 }
