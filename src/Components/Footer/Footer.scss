@@ -5,7 +5,9 @@ footer {
   justify-content: center;
   z-index: 999;
   gap: 2.5rem;
+  filter: drop-shadow(5px 5px 5px black);
 }
+
 
 .logo {
   @include primeFont();

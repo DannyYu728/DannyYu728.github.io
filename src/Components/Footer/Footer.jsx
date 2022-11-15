@@ -14,9 +14,9 @@ function Footer() {
       <a href="https://www.linkedin.com/in/dannyyu728/" target="_blank">
       <img src={Linkedin} alt="hoobank" className="linkedin" />
       </a>
-      <a href="https://www.linkedin.com/in/dannyyu728/" target="_blank">
+      {/* <a href="https://www.linkedin.com/in/dannyyu728/" target="_blank">
       <img src={Resume} alt="hoobank" className="linkedin" />
-      </a>
+      </a> */}
     </footer>
   );
 }
