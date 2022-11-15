@@ -1,38 +1,22 @@
 @import "../../Assets/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 .about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: calc(100vh - 3rem);
-  // background-color: #021027;
   background: url(../../Assets/NY2.jpg);
   background-position: center;
   background-size: cover;
-
-  mask-image: radial-gradient(
-    #18313a 90%,
-    #18313a 80%,
-    transparent
-  );
 }
 
-// .background {
-//   display: block;
-//   object-fit: cover;
-//   width: 100%;
-//   height: 100%;
-
-//   mask-image: radial-gradient(
-//     white 0%,
-//     white 30%,
-//     transparent 80%,
-//     transparent
-//   );
-// }
-
 .circle-container {
+  z-index: 99;
   $particleNum: 200;
   $particleColor: hsl(180, 100%, 80%);
-  position: absolute;
+  position: fixed;
   transform: translateY(-10vh);
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -112,28 +96,29 @@
   }
 }
 
-.panda {
-  position: absolute;
-  top: 5rem;
-  left: 10rem;
+.contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  animation: message-frames 1.5s ease 1s forwards;
+  opacity: 0;
+  background: transparent;
+  z-index: 100;
 }
 
 .message {
-  background-color: rgba($color: #021027, $alpha: 0.8);
-  position: absolute;
-  top: 5rem;
-  right: 5rem;
-  color: white;
-  font-family: "Josefin Slab", serif;
-  line-height: 27px;
-  font-size: 18px;
-  text-align: right;
+  background-color: rgba($color: #021027, $alpha: 0.7);
+  text-shadow: 5px 5px 5px black;
+  color: $white;
+  @include primeFont();
+  line-height: 1.5rem;
+  font-size: 1.3rem;
   pointer-events: none;
-  animation: message-frames 1.5s ease 1s forwards;
-  opacity: 0;
   padding: 2rem;
-  max-width: 30rem;
-  border-radius: 30%;
+  max-width: 50rem;
+  border-radius: 20%;
 
   @keyframes message-frames {
     from {
