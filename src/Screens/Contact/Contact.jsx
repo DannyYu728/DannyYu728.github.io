@@ -4,7 +4,7 @@ import { useRef } from "react";
 function Contact() {
   const subRef = useRef()
   const msgRef = useRef()
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     window.open(`mailto:unknownx2@gmail.com?subject=${subRef.current.value}&body=${msgRef.current.value}`)
   };
