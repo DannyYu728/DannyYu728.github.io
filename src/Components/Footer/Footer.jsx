@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer>
       <a href="https://github.com/DannyYu728" target="_blank">
-      <img src={Logo} alt="hoobank" className="home" />
+      <img src={Logo} alt="hoobank" className="git" />
       </a>
       <a href="https://www.linkedin.com/in/dannyyu728/" target="_blank">
       <img src={Linkedin} alt="hoobank" className="linkedin" />

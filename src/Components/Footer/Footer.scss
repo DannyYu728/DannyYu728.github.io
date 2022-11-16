@@ -1,4 +1,4 @@
-@import '../../Assets/mixins';
+@import "../../Assets/mixins";
 
 footer {
   display: flex;
@@ -8,14 +8,15 @@ footer {
   filter: drop-shadow(5px 5px 5px black);
 }
 
-
-.logo {
-  @include primeFont();
-  color: $primary-color-hover;
-  padding: 1rem;
-}
-
 .linkedin {
   height: 64px;
   width: 64px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .git,
+  .linkedin {
+    height: 32px;
+    width: 32px;
+  }
 }
