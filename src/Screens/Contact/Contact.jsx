@@ -6,12 +6,12 @@ function Contact() {
   const msgRef = useRef()
   const handleSubmit = async (e) => {
     e.preventDefault();
-    window.open(`mailto:unknownx2@gmail.com?subject=${emailRef}=${msgRef}`)
+    window.open(`mailto:unknownx2@gmail.com?subject=${emailRef.current.value}=${msgRef.current.value}`)
   };
 
   return (
     <div className="contact">
-      <form className="forms" onSubmit={handleSubmit}>
+      <form className="forms" onSubmit={handleSubmit} method="post">
         <input ref={emailRef} className="formIn" type="email" size="60" placeholder="Enter Your Email" name="email"></input>
         <textarea ref={msgRef} className="formIn" rows="15" cols="80" placeholder='Enter message...'></textarea>
         <button className="formBtn" type="submit">SEND!</button>
