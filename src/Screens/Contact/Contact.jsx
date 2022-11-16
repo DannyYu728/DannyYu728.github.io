@@ -6,7 +6,7 @@ function Contact() {
   const msgRef = useRef()
   const handleSubmit = async (e) => {
     e.preventDefault();
-    window.open(`mailto:unknownx2@gmail.com?subject=${subRef.current.value};body=${msgRef.current.value}`)
+    window.open(`mailto:unknownx2@gmail.com?subject=${subRef.current.value}&body=${msgRef.current.value}`)
   };
 
   return (
