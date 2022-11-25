@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 
 class Slide extends Component {
   constructor(props) {
@@ -7,7 +6,7 @@ class Slide extends Component {
     this.slide = React.createRef();
   }
 
-  handleMouseMove = event => {
+  handleMouseMove = (event) => {
     const el = this.slide.current;
     const r = el.getBoundingClientRect();
     el.style.setProperty(
@@ -20,21 +19,21 @@ class Slide extends Component {
     );
   };
 
-  handleMouseLeave = event => {
+  handleMouseLeave = (event) => {
     this.slide.current.style.setProperty("--x", 0);
     this.slide.current.style.setProperty("--y", 0);
   };
 
-  handleSlideClick = event => {
+  handleSlideClick = (event) => {
     this.props.handleSlideClick(this.props.slide.index);
   };
 
-  imageLoaded = event => {
+  imageLoaded = (event) => {
     event.target.style.opacity = 1;
   };
 
   render() {
-    const { src, button, headline, index } = this.props.slide;
+    const { src, summary, headline, index, stack } = this.props.slide;
     const current = this.props.current;
     let classNames = "slide";
 
@@ -58,14 +57,18 @@ class Slide extends Component {
             onLoad={this.imageLoaded}
           />
         </div>
-
         <article className="slide__content">
           <h2 className="slide__headline">{headline}</h2>
-          <button className="slide__action formBtn btn2">Learn More</button>
+          <button className="slide__action formBtn btn2" onClick={this.props.learnMore}>Learn More</button>
+          <div className="con">
+            {stack.map((e, i) => {
+              return <img className="btn2" src={e} key={i} />;
+            })}
+          </div>
         </article>
       </li>
     );
   }
 }
 
-export default Slide
+export default Slide;

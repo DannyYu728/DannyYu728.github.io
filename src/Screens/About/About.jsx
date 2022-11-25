@@ -18,8 +18,8 @@ function About() {
         </p>
       </div>
       {Array.apply(null, { length: 100 }).map((e, i) => (
-        <div class="circle-container">
-          <div class="circle"></div>
+        <div className="circle-container">
+          <div className="circle"></div>
         </div>
       ))}
     </div>
