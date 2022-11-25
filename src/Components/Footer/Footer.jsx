@@ -8,13 +8,13 @@ function Footer() {
   return (
     <footer>
       <a href="https://github.com/DannyYu728" target="_blank">
-        <img src={Logo} alt="hoobank" className="git" />
+        <img src={Logo} alt="Github" className="git" />
       </a>
       <a href="https://www.linkedin.com/in/dannyyu728/" target="_blank">
-        <img src={Linkedin} alt="hoobank" className="linkedin" />
+        <img src={Linkedin} alt="Linkedin" className="linkedin" />
       </a>
       <a href="../../Assets/Resume.pdf" target="_blank" type="application/octet-stream" download="Danny.pdf">
-        <img src={Resume} alt="hoobank" className="linkedin" />
+        <img src={Resume} alt="Resume" className="linkedin" />
       </a>
     </footer>
   );
