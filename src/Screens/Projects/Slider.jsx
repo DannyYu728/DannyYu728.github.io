@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slide from "../../Components/Slide";
-import Info from "../../Components/Info/Info"
+import Info from "../../Components/Info/Info";
 import SliderControl from "../../Components/SliderControl";
 import "./Styles.scss";
 
@@ -39,10 +39,15 @@ class Slider extends Component {
   };
 
   learnMore = () => {
-    console.log("HEKKO")
-    this.setState({
-      toggle: true
-    });
+    if (this.state.toggle) {
+      this.setState({
+        toggle: false,
+      });
+    } else {
+      this.setState({
+        toggle: true,
+      });
+    }
   };
 
   renderSlide = (slides, current) => {

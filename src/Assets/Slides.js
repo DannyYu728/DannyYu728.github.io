@@ -16,55 +16,55 @@ const slideData = [
     summary: "Shop the Universe",
     src: "https://i.imgur.com/sxcKG12.png",
     stack: [htmlIcon, cssIcon, expIcon, mongodbIcon, mongooseIcon, nodeIcon, reactIcon, jsIcon, tailIcon],
-    Links: "dummy"
+    link: "https://spacecommerce.netlify.app/"
   },
   {
     index: 1,
     headline: "Rick and Morty",
     summary: "Too many Characters",
     src: "https://i.imgur.com/A6YSN2a.png",
-    stack: [htmlIcon, cssIcon, expIcon, mongodbIcon, mongooseIcon, nodeIcon, reactIcon, jsIcon, tailIcon],
-    Links: "dummy"
+    stack: [htmlIcon, cssIcon, reactIcon, jsIcon],
+    link: "https://rickandmorty-frontreact.netlify.app/"
   },
   {
     index: 2,
     headline: "Countries Dots",
     summary: "Plot Me!",
     src: "https://i.imgur.com/nplNHGs.png",
-    stack: [htmlIcon, cssIcon, expIcon, mongodbIcon, mongooseIcon, nodeIcon, reactIcon, jsIcon, tailIcon],
-    Links: "dummy"
+    stack: [htmlIcon, cssIcon, reactIcon, jsIcon],
+    link: "https://countries-frontreact.netlify.app/"
   },
   {
     index: 3,
     headline: "Tic Tac Toe",
     summary: "XOXO",
     src: "https://i.imgur.com/50hX0UZ.png",
-    stack: [htmlIcon, cssIcon, expIcon, mongodbIcon, mongooseIcon, nodeIcon, reactIcon, jsIcon, tailIcon],
-    Links: "dummy"
+    stack: [htmlIcon, cssIcon, jsIcon],
+    link: "https://dannyyu728.github.io/tic-tac-toe/"
   },
   {
     index: 4,
     headline: "Tamagotchi and Shooter",
     summary: "Nyan Nyan",
     src: "https://i.imgur.com/qDmOlfF.jpg",
-    stack: [htmlIcon, cssIcon, expIcon, mongodbIcon, mongooseIcon, nodeIcon, reactIcon, jsIcon, tailIcon],
-    Links: "dummy"
+    stack: [htmlIcon, cssIcon, jsIcon],
+    link: "https://dannyyu728.github.io/Tamagotchi/"
   },
   {
     index: 5,
     headline: "Sushi API",
     summary: "Fish?",
     src: "https://i.imgur.com/VZUgraz.png",
-    stack: [htmlIcon, cssIcon, expIcon, mongodbIcon, mongooseIcon, nodeIcon, reactIcon, jsIcon, tailIcon],
-    Links: "dummy"
+    stack: [htmlIcon, cssIcon, expIcon, mongodbIcon, mongooseIcon, nodeIcon, jsIcon],
+    link: "https://github.com/DannyYu728/whats-that-fish"
   },
   {
     index: 6,
     headline: "Auto Game of War",
     summary: "CPU vs CPU",
     src: "https://i.imgur.com/OKi0cmP.png",
-    stack: [htmlIcon, cssIcon, expIcon, mongodbIcon, mongooseIcon, nodeIcon, reactIcon, jsIcon, tailIcon],
-    Links: "dummy"
+    stack: [htmlIcon, cssIcon, jsIcon],
+    link: "https://dannyyu728.github.io/Game-of-War/"
   },
 ];
 

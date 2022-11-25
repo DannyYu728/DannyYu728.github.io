@@ -32,6 +32,11 @@ class Slide extends Component {
     event.target.style.opacity = 1;
   };
 
+  learnTemp = () => {
+    console.log(this.props)
+    window.open(this.props.slide.link, '_blank');
+  }
+
   render() {
     const { src, summary, headline, index, stack } = this.props.slide;
     const current = this.props.current;
@@ -59,7 +64,8 @@ class Slide extends Component {
         </div>
         <article className="slide__content">
           <h2 className="slide__headline">{headline}</h2>
-          <button className="slide__action formBtn btn2" onClick={this.props.learnMore}>Learn More</button>
+          {/* <button className="slide__action formBtn btn2" onClick={this.props.learnMore}>Learn More</button> */}
+          <button className="slide__action formBtn btn2" onClick={this.learnTemp}>Learn More</button>
           <div className="con">
             {stack.map((e, i) => {
               return <img className="btn2" src={e} key={i} />;
