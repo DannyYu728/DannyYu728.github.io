@@ -1,0 +1,55 @@
+@import '../../Assets/mixins';
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: url("https://images4.alphacoders.com/936/936378.jpg");
+  background-size: cover;
+  background-position: center;
+  gap: 1.2rem;
+}
+
+.detail-title {
+  font-size: 5rem;
+  color: $primary-color-hover;
+  text-shadow: 3px 3px 5px $primary-color;
+}
+
+.detail-img {
+  width: 50%;
+  height: 50%;
+  filter: drop-shadow(0px 3px 10px $primary-color-hover);
+}
+
+.detail-summary {
+  border-radius: 25%;
+  text-shadow: 5px 5px 5px black;
+  background: rgba($color: black, $alpha: .7);
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.detail-icons {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  gap: 0.5rem;
+  filter: drop-shadow(2px 3px 8px $primary-color-hover);
+}
+
+.details-links {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  gap: 1rem;
+}
+.details-links > a {
+  text-decoration: none;
+  color: $primary-color-hover;
+  font-weight: bolder;
+  text-shadow: 5px 5px 5px black;
+}

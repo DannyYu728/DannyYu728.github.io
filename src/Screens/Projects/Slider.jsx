@@ -10,7 +10,6 @@ class Slider extends Component {
     this.state = {
       current: 0,
       heading: "Example Slider",
-      toggle: false,
     };
   }
 
@@ -38,18 +37,6 @@ class Slider extends Component {
     }
   };
 
-  learnMore = () => {
-    if (this.state.toggle) {
-      this.setState({
-        toggle: false,
-      });
-    } else {
-      this.setState({
-        toggle: true,
-      });
-    }
-  };
-
   renderSlide = (slides, current) => {
     return slides.map((slide) => {
       return (
@@ -58,7 +45,7 @@ class Slider extends Component {
           slide={slide}
           current={current}
           handleSlideClick={this.handleSlideClick}
-          learnMore={this.learnMore}
+          navigate={this.props.navigate}
         />
       );
     });

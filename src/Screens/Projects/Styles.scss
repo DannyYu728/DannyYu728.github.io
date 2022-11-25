@@ -97,9 +97,6 @@ h3 {
   display: flex;
   margin: 0 calc(var(--slide-margin) * -1);
   position: absolute;
-  transition: -webkit-transform var(--base-duration)
-    cubic-bezier(0.25, 1, 0.35, 1);
-  transition: transform var(--base-duration) cubic-bezier(0.25, 1, 0.35, 1);
   transition: transform var(--base-duration) cubic-bezier(0.25, 1, 0.35, 1);
 }
 
@@ -171,7 +168,6 @@ h3 {
   overflow: hidden;
   position: absolute;
   top: 0%;
-  transition: transform calc(var(--base-duration) / 4) var(--base-ease);
   transition: transform calc(var(--base-duration) / 4) var(--base-ease);
   width: 100%;
 }
@@ -268,11 +264,4 @@ h3 {
 .btn2 {
   font-size: 0.9rem;
   text-shadow: 1px 1px 5px black;
-}
-
-.con {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 500px;
 }

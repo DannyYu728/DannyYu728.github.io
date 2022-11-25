@@ -1,9 +1,13 @@
 import React, { Component } from "react";
+import Modal from "./Modal/Modal";
 
 class Slide extends Component {
   constructor(props) {
     super(props);
     this.slide = React.createRef();
+    this.state = {
+      toggle: false,
+    };
   }
 
   handleMouseMove = (event) => {
@@ -32,10 +36,10 @@ class Slide extends Component {
     event.target.style.opacity = 1;
   };
 
-  learnTemp = () => {
-    console.log(this.props)
-    window.open(this.props.slide.link, '_blank');
-  }
+  learnMore = () => {
+    // window.open(this.props.slide.link, '_blank');
+    this.props.navigate("/details", { state: this.props.slide })
+  };
 
   render() {
     const { src, summary, headline, index, stack } = this.props.slide;
@@ -64,13 +68,17 @@ class Slide extends Component {
         </div>
         <article className="slide__content">
           <h2 className="slide__headline">{headline}</h2>
-          {/* <button className="slide__action formBtn btn2" onClick={this.props.learnMore}>Learn More</button> */}
-          <button className="slide__action formBtn btn2" onClick={this.learnTemp}>Learn More</button>
-          <div className="con">
+          <button
+            className="slide__action formBtn btn2"
+            onClick={this.learnMore}
+          >
+            Learn More
+          </button>
+          {/* <div className="con">
             {stack.map((e, i) => {
               return <img className="btn2" src={e} key={i} />;
             })}
-          </div>
+          </div> */}
         </article>
       </li>
     );

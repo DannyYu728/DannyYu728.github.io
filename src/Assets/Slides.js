@@ -16,7 +16,8 @@ const slideData = [
     summary: "Shop the Universe",
     src: "https://i.imgur.com/sxcKG12.png",
     stack: [htmlIcon, cssIcon, expIcon, mongodbIcon, mongooseIcon, nodeIcon, reactIcon, jsIcon, tailIcon],
-    link: "https://spacecommerce.netlify.app/"
+    link: "https://spacecommerce.netlify.app/",
+    link2: "https://github.com/kyleanthony8/SpaceCommerce-FrontEnd"
   },
   {
     index: 1,
@@ -24,7 +25,8 @@ const slideData = [
     summary: "Too many Characters",
     src: "https://i.imgur.com/A6YSN2a.png",
     stack: [htmlIcon, cssIcon, reactIcon, jsIcon],
-    link: "https://rickandmorty-frontreact.netlify.app/"
+    link: "https://rickandmorty-frontreact.netlify.app/",
+    link2: "https://github.com/DannyYu728/react-rickandmorty"
   },
   {
     index: 2,
@@ -32,7 +34,8 @@ const slideData = [
     summary: "Plot Me!",
     src: "https://i.imgur.com/nplNHGs.png",
     stack: [htmlIcon, cssIcon, reactIcon, jsIcon],
-    link: "https://countries-frontreact.netlify.app/"
+    link: "https://countries-frontreact.netlify.app/",
+    link2: "https://github.com/DannyYu728/react-countries"
   },
   {
     index: 3,
@@ -40,7 +43,8 @@ const slideData = [
     summary: "XOXO",
     src: "https://i.imgur.com/50hX0UZ.png",
     stack: [htmlIcon, cssIcon, jsIcon],
-    link: "https://dannyyu728.github.io/tic-tac-toe/"
+    link: "https://dannyyu728.github.io/tic-tac-toe/",
+    link2: "https://github.com/DannyYu728/tic-tac-toe"
   },
   {
     index: 4,
@@ -48,7 +52,8 @@ const slideData = [
     summary: "Nyan Nyan",
     src: "https://i.imgur.com/qDmOlfF.jpg",
     stack: [htmlIcon, cssIcon, jsIcon],
-    link: "https://dannyyu728.github.io/Tamagotchi/"
+    link: "https://dannyyu728.github.io/Tamagotchi/",
+    link2: "https://github.com/DannyYu728/Tamagotchi"
   },
   {
     index: 5,
@@ -56,7 +61,8 @@ const slideData = [
     summary: "Fish?",
     src: "https://i.imgur.com/VZUgraz.png",
     stack: [htmlIcon, cssIcon, expIcon, mongodbIcon, mongooseIcon, nodeIcon, jsIcon],
-    link: "https://github.com/DannyYu728/whats-that-fish"
+    link: "https://github.com/DannyYu728/whats-that-fish",
+    link2: "https://github.com/DannyYu728/whats-that-fish"
   },
   {
     index: 6,
@@ -64,7 +70,8 @@ const slideData = [
     summary: "CPU vs CPU",
     src: "https://i.imgur.com/OKi0cmP.png",
     stack: [htmlIcon, cssIcon, jsIcon],
-    link: "https://dannyyu728.github.io/Game-of-War/"
+    link: "https://dannyyu728.github.io/Game-of-War/",
+    link2: "https://github.com/DannyYu728/Game-of-War"
   },
 ];
 
