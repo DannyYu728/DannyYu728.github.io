@@ -64,6 +64,7 @@ class Slide extends Component {
             alt={headline}
             src={src}
             onLoad={this.imageLoaded}
+            loading="lazy"
           />
         </div>
         <article className="slide__content">
@@ -74,11 +75,6 @@ class Slide extends Component {
           >
             Learn More
           </button>
-          {/* <div className="con">
-            {stack.map((e, i) => {
-              return <img className="btn2" src={e} key={i} />;
-            })}
-          </div> */}
         </article>
       </li>
     );

@@ -8,6 +8,9 @@ import reactIcon from "./icons8-react-64.png";
 import jsIcon from "./java-script.png";
 import sassIcon from "./icons8-sass-avatar-64.png"
 import tailIcon from "./icons8-tailwind-css-64.png"
+import djangoIcon from "./icons8-django-64.png"
+import pythonIcon from "./icons8-python-64.png"
+import bootIcon from "./icons8-bootstrap-64.png"
 
 const slideData = [
   {
@@ -21,6 +24,15 @@ const slideData = [
   },
   {
     index: 1,
+    headline: "Breddit",
+    summary: "The Better Reddit",
+    src: "https://i.imgur.com/xSdHin1.png",
+    stack: [htmlIcon, cssIcon, expIcon, djangoIcon, pythonIcon, reactIcon, jsIcon, bootIcon],
+    link: "https://dy-breddit.netlify.app/",
+    link2: "https://github.com/DannyYu728/reddit-clone-v2"
+  },
+  {
+    index: 2,
     headline: "Rick and Morty",
     summary: "Too many Characters",
     src: "https://i.imgur.com/A6YSN2a.png",
@@ -29,7 +41,7 @@ const slideData = [
     link2: "https://github.com/DannyYu728/react-rickandmorty"
   },
   {
-    index: 2,
+    index: 3,
     headline: "Countries Dots",
     summary: "Plot Me!",
     src: "https://i.imgur.com/nplNHGs.png",
@@ -38,7 +50,7 @@ const slideData = [
     link2: "https://github.com/DannyYu728/react-countries"
   },
   {
-    index: 3,
+    index: 4,
     headline: "Tic Tac Toe",
     summary: "XOXO",
     src: "https://i.imgur.com/50hX0UZ.png",
@@ -47,7 +59,7 @@ const slideData = [
     link2: "https://github.com/DannyYu728/tic-tac-toe"
   },
   {
-    index: 4,
+    index: 5,
     headline: "Tamagotchi and Shooter",
     summary: "Nyan Nyan",
     src: "https://i.imgur.com/qDmOlfF.jpg",
@@ -56,7 +68,7 @@ const slideData = [
     link2: "https://github.com/DannyYu728/Tamagotchi"
   },
   {
-    index: 5,
+    index: 6,
     headline: "Sushi API",
     summary: "Fish?",
     src: "https://i.imgur.com/VZUgraz.png",
@@ -65,7 +77,7 @@ const slideData = [
     link2: "https://github.com/DannyYu728/whats-that-fish"
   },
   {
-    index: 6,
+    index: 7,
     headline: "Auto Game of War",
     summary: "CPU vs CPU",
     src: "https://i.imgur.com/OKi0cmP.png",

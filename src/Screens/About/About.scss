@@ -7,17 +7,21 @@
   align-items: center;
   width: 100%;
   height: calc(100vh - 3rem);
-  background: url(../../Assets/NY2.jpg);
+  background: #101418;
   background-position: center;
   background-size: cover;
 }
 
+.circle-box {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
 .circle-container {
-  z-index: 99;
+  z-index: 999;
   $particleNum: 200;
   $particleColor: hsl(180, 100%, 80%);
   position: fixed;
-  transform: translateY(-10vh);
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 

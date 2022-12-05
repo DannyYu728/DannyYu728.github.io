@@ -1,12 +1,11 @@
 import "./About.scss";
-import NY from "../../Assets/NY2.jpg";
 import panda from "../../Assets/panda.gif";
 
 function About() {
   return (
     <div className="about">
       <div className="contents">
-        <img className="panda" src={panda} />
+        <img className="panda" src={panda} loading="lazy"/>
         <p className="message">
           Former insurance underwriter turned Software Engineer, with experience
           in developing rapport, explaining terminology and highlighting the
@@ -17,11 +16,13 @@ function About() {
           solutions that will benefit the company and its end-users.
         </p>
       </div>
-      {Array.apply(null, { length: 100 }).map((e, i) => (
-        <div className="circle-container">
-          <div className="circle"></div>
-        </div>
-      ))}
+      <div className="circle-box">
+        {Array.apply(null, { length: 100 }).map((e, i) => (
+          <div className="circle-container" key={i}>
+            <div className="circle"></div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

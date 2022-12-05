@@ -16,16 +16,16 @@ function Contact() {
         <textarea ref={msgRef} className="formIn" rows="15" cols="80" placeholder='Enter message...'></textarea>
         <button className="formBtn" type="submit">SEND!</button>
       </form>
-      <div class="container">
+      <div className="container">
         {Array.apply(null, { length: 9 }).map((e, i) => (
-          <div class="rain">
-            <div class="drop"></div>
-            <div class="waves">
+          <div className="rain" key={i}>
+            <div className="drop"></div>
+            <div className="waves">
               <div></div>
               <div></div>
             </div>
-            <div class="splash"></div>
-            <div class="particles">
+            <div className="splash"></div>
+            <div className="particles">
               <div></div>
               <div></div>
               <div></div>

@@ -2,7 +2,7 @@
 
 nav {
   display: flex;
-  width: 100%;
+  width: 100vw;
   align-items: center;
   justify-content: space-between;
   background: rgb(28, 28, 28);
@@ -23,12 +23,12 @@ nav {
 .right {
   z-index: 999;
   display: flex;
+  gap: 1rem;
 }
 
 .navLinks {
   @include secondaryFont();
   color: #e9e3d5;
-  padding: 1rem;
   letter-spacing: 1px;
 }
 

@@ -4,12 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 3rem);
   width: 100vw;
   background: url("https://images4.alphacoders.com/936/936378.jpg");
   background-size: cover;
   background-position: center;
-  gap: 1.2rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .detail-title {
@@ -35,7 +36,7 @@
 
 .detail-icons {
   display: flex;
-  padding: 1rem;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
   filter: drop-shadow(2px 3px 8px $primary-color-hover);
@@ -52,4 +53,11 @@
   color: $primary-color-hover;
   font-weight: bolder;
   text-shadow: 5px 5px 5px black;
+}
+
+@media screen and (max-width: 996px) {
+  .btn2 {
+    width: 40px;
+    height: 40px;
+  }
 }
