@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slide from "../../Components/Slide";
-import Info from "../../Components/Info/Info";
 import SliderControl from "../../Components/SliderControl";
 import "./Styles.scss";
 
@@ -62,7 +61,6 @@ class Slider extends Component {
     };
     return (
       <div className="projects">
-        <Info />
         <div className="slider" aria-labelledby={headingId}>
           <ul className="slider__wrapper" style={wrapperTransform}>
             <h3 id={headingId} className="visuallyhidden">

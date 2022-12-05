@@ -265,3 +265,9 @@ h3 {
   font-size: 0.9rem;
   text-shadow: 1px 1px 5px black;
 }
+
+@media screen and (max-width: 996px) {
+  .slide__action {
+    font-size: 0.5rem;
+  }
+}

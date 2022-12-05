@@ -27,7 +27,7 @@ const slideData = [
     headline: "Breddit",
     summary: "The Better Reddit",
     src: "https://i.imgur.com/xSdHin1.png",
-    stack: [htmlIcon, cssIcon, expIcon, djangoIcon, pythonIcon, reactIcon, jsIcon, bootIcon],
+    stack: [htmlIcon, cssIcon, djangoIcon, pythonIcon, reactIcon, jsIcon, bootIcon],
     link: "https://dy-breddit.netlify.app/",
     link2: "https://github.com/DannyYu728/reddit-clone-v2"
   },
