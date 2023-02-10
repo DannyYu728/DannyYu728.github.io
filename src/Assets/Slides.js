@@ -33,6 +33,15 @@ const slideData = [
   },
   {
     index: 2,
+    headline: "Daily Drip",
+    summary: "Your daily source for water consciousness",
+    src: "https://i.imgur.com/e0wRGrY.png",
+    stack: [htmlIcon, cssIcon, djangoIcon, pythonIcon, reactIcon, jsIcon, bootIcon],
+    link: "https://daily-drip.netlify.app/",
+    link2: "https://github.com/Brandon-Alvarez-03/Daily-Drip"
+  },
+  {
+    index: 3,
     headline: "Rick and Morty",
     summary: "Too many Characters",
     src: "https://i.imgur.com/A6YSN2a.png",
@@ -41,7 +50,7 @@ const slideData = [
     link2: "https://github.com/DannyYu728/react-rickandmorty"
   },
   {
-    index: 3,
+    index: 4,
     headline: "Countries Dots",
     summary: "Plot Me!",
     src: "https://i.imgur.com/nplNHGs.png",
@@ -50,7 +59,7 @@ const slideData = [
     link2: "https://github.com/DannyYu728/react-countries"
   },
   {
-    index: 4,
+    index: 5,
     headline: "Tic Tac Toe",
     summary: "XOXO",
     src: "https://i.imgur.com/50hX0UZ.png",
@@ -59,7 +68,7 @@ const slideData = [
     link2: "https://github.com/DannyYu728/tic-tac-toe"
   },
   {
-    index: 5,
+    index: 6,
     headline: "Tamagotchi and Shooter",
     summary: "Nyan Nyan",
     src: "https://i.imgur.com/qDmOlfF.jpg",
@@ -68,7 +77,7 @@ const slideData = [
     link2: "https://github.com/DannyYu728/Tamagotchi"
   },
   {
-    index: 6,
+    index: 7,
     headline: "Sushi API",
     summary: "Fish?",
     src: "https://i.imgur.com/VZUgraz.png",
@@ -77,7 +86,7 @@ const slideData = [
     link2: "https://github.com/DannyYu728/whats-that-fish"
   },
   {
-    index: 7,
+    index: 8,
     headline: "Auto Game of War",
     summary: "CPU vs CPU",
     src: "https://i.imgur.com/OKi0cmP.png",
